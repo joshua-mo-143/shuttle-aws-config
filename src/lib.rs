@@ -3,7 +3,8 @@ use serde::{Serialize, Deserialize};
 use shuttle_service::Factory;
 use shuttle_service::ResourceBuilder;
 use shuttle_service::Type;
-use aws_config::{SdkConfig, Region};
+use aws_config::Region;
+pub use aws_config::SdkConfig;
 use aws_credential_types::Credentials;
 
 #[derive(Serialize, Deserialize)]
